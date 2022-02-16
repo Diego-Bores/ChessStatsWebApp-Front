@@ -1,0 +1,14 @@
+<h1 style="text-align:center">Resultados ajedrez </h1>
+<div class="listaResultados">
+
+    <li *ngFor="let jugador of jugadores; let i = index"> <h1>{{ jugador.nombre }}</h1>
+        <h1>{{ jugador.victorias }}</h1>
+    </li>
+</div>
+
+<h1 style="text-align:center">Añadir nueva partida </h1>
+<p style="text-align: center;">--------sección en desarrollo--------</p>
+<app-formularioPartida></app-formularioPartida>
+
+<h1 style="text-align:center">Estadísticas </h1>
+<app-estadisticasAjedrez></app-estadisticasAjedrez>

@@ -1,0 +1,16 @@
+.listaResultados {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row; justify-content: center; align-items: center
+
+}
+.listaResultados li {
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    margin:12px;
+    padding-right: 10%;
+    padding-left: 10%;
+}

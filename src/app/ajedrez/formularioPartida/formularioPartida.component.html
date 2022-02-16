@@ -1,0 +1,40 @@
+<div class="form-group">
+  <div class="fecha">
+    <label for="Fecha">Fecha </label>  
+    <select class="form-control" id="ganador" >
+      <option value="" selected disabled hidden>Elige...</option>
+      <option *ngFor="let jugador of nombreJugadores" >{{jugador}}</option>
+    </select>
+  </div>
+
+  <div class="jugadorBlancas">
+    <label for="jugador1">Jugador blancas </label>  
+    <select class="form-control" id="jugador1" >
+      <option value="" selected disabled hidden>Elige...</option>
+      <option *ngFor="let pow of nombreJugadores" [value]="pow">{{pow}}</option>
+    </select>
+  </div>
+
+
+  <div class="jugadorNegras">
+    <label for="jugador2">Jugador  negras </label>  
+    <select class="form-control" id="jugador2" >
+      <option value="" selected disabled hidden>Elige...</option>
+      <option *ngFor="let jugador of nombreJugadores" >{{jugador}}</option>
+    </select>
+  </div>
+  
+  
+  <div class="ganador">
+    <label for="Ganador">Ganador </label>  
+    <select class="form-control" id="ganador" required>
+      <option value="" selected disabled hidden>Elige...</option>
+      <option *ngFor="let jugador of nombreJugadores" >{{jugador}}</option>
+    </select>
+  </div>
+  
+
+  <button class="botonGuardado" (click)="onSave()">Añadir partida</button>
+
+</div> 
+
